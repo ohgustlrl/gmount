@@ -1,0 +1,203 @@
+// COMMON
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+// HEADER
+
+header > div.container-fluid {
+  order: 1;
+  border-bottom: 1px solid #000;
+}
+header div.container-fluid .inner { 
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+header div.container-fluid .inner > a {
+  width: 130px;
+  padding: 0 10px;
+}
+header div.container-fluid .inner > a > img {
+  width: 100%;
+}
+
+header div.container-fluid .inner .main_menu {
+  flex-grow: 2;
+}
+header div.container-fluid .inner .main_menu > ul {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+header div.container-fluid .inner .main_menu .menu_item > .depth { 
+  position: relative;
+  padding: 0 20px 10px 20px;
+  z-index: 99;
+}
+header div.container-fluid .inner .main_menu .menu_item > .depth .menu_name { 
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+header div.container-fluid .inner .main_menu .menu_item > .depth .munu_depth {
+  position: fixed;
+  top: 101px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background-color: #fff;
+  transition: all 0.4s;
+ 
+}
+
+header div.container-fluid .inner .main_menu .menu_item > .depth:hover > .munu_depth { 
+  height: 250px;
+}
+
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub {
+  opacity: 0;
+  pointer-events: none;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub {
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  pointer-events: none;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth:first-child:hover .munu_depth > .menu_sub {
+  opacity: 1;
+  pointer-events: auto;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth:last-child:hover .munu_depth > .menu_sub { 
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  pointer-events: auto;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li { 
+  padding: 20px 50px;
+  color: #000;
+  font-size: 1em;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li h6 { 
+  font-weight: 600;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li ul li {
+  position: relative;
+  padding: 5px 0;
+  width: 100%;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li ul li a {
+  position: relative;
+  padding-left: 20px;
+  transition: all .4s;
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li ul li a::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: -50%;
+  transform: translateY(25%);
+}
+header div.container-fluid .inner .main_menu .menu_item .depth .munu_depth > .menu_sub > li ul li:hover a {
+  color: #006699;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+}
+// SECTION OF BANNER
+.main_banner {
+  order: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main_banner .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+// SECTION OF CAROUSEL
+.carousel {
+  order: 2;
+  height: 100vh;
+  background-color: rgb(213, 213, 213);
+  padding-bottom: 50px;
+}
+.carousel .carousel-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.carousel .carousel-inner > h5 {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.carousel .carousel-inner > h5::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 10%;
+  height: 3px;
+  background-color: #006699;
+}
+.carousel .carousel-inner .carousel-wrap {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+}
+.carousel .carousel-inner .carousel-wrap .carousel-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-wrap .carousel-head [class*='carousel-item'] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+.carousel .carousel-inner .carousel-wrap .carousel-head [class*='carousel-item'] .item-img {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.carousel .carousel-inner .carousel-wrap .item-contents {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.carousel .carousel-inner .carousel-wrap .item-contents.on {
+  display: block;
+}

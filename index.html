@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmount</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- Custom CSS&JS -->
+  <link rel="stylesheet" href="./css/main.scss">
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/swiper.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container-fluid">
+        <div class="inner container">
+          <a href="/">
+            <img src="./img/logo_big.png" alt="Logo">
+          </a>
+
+          <div class="main_menu">
+            <ul class="menu_item">
+              <li class="depth">
+                <div class="menu_name">회사소개</div>
+                <div class="munu_depth">
+                  <ul class="menu_sub container">
+                    <li>
+                      <h6>브랜드</h6>
+                      <ul>
+                        <li><a href="">TV</a></li>
+                        <li><a href="">마운트</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h6>A/S 안내</h6>
+                      <ul>
+                        <li><a href="">A/S</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h6>오시는 길</h6>
+                      <ul>
+                        <li><a href="">오시는길</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="depth">
+                <div class="menu_name">제품소개</div>
+                <div class="munu_depth">
+                  <ul class="menu_sub container">
+                    <li>
+                      <h6>TV 모니터 거치대</h6>
+                      <ul>
+                        <li><a href="">모니터 암</a></li>
+                        <li><a href="">벽걸이형 브라켓</a></li>
+                        <li><a href="">천장형 브라켓</a></li>
+                        <li><a href="">스탠드</a></li>
+                        <li><a href="">선반 및 셋탑박스 거치대</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h6>케이블</h6>
+                      <ul>
+                        <li><a href="">HDMI</a></li>
+                        <li><a href="">LAN</a></li>
+                      </ul>
+                    </li>
+                      
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search">
+            <input type="text" name="" id="">
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Section Banner -->
+    <section class="main_banner">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./img/02.jpg" alt="Banner Image"></div>
+          <div class="swiper-slide"><img src="./img/03.jpg" alt="Banner Image"></div>
+          <div class="swiper-slide"><img src="./img/04.jpg" alt="Banner Image"></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </section>
+    <section class="carousel container-fluid">
+      
+      <article class="carousel-inner container">
+        <h5>우리는 이런 제품을 만듭니다.</h5>
+        <div class="carousel-wrap">
+          <ul class="carousel-head">
+            <li class="carousel-item1">
+              <div class="item-img">
+                <img src="./img/tv-icon.png" alt="tv-icon">
+              </div>
+            </li>
+            <li class="carousel-item2">
+              <div class="item-img">
+                <img src="./img/mount-icon.png" alt="mount-icon">  
+              </div>
+            </li>
+            <li class="carousel-item3">
+              <div class="item-img">
+                <img src="./img/stand-icon.png" alt="stand-icon">
+              </div>
+            </li>
+          </ul>
+          <div class="item-contents">
+            <div class="contents-img"></div>
+            <div class="contents-caption">1</div>
+          </div>
+          <div class="item-contents">
+            <div class="contents-img"></div>
+            <div class="contents-caption">2</div>
+          </div>
+          <div class="item-contents">
+            <div class="contents-img"></div>
+            <div class="contents-caption">3</div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </div>  
+</body>
+</html>

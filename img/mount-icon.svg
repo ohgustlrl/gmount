@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <image id="image" width="11" height="89" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAABZCAYAAADo6t7aAAAAOElEQVRIie3XsQ0AIAwDwZj9dwYJqFFqdN+4uQWcOs27r5Im3I0uhGEYhmEYhmEYhuFvcf93V2UBmL0DrwLdYT0AAAAASUVORK5CYII="/>
+    <image id="image-2" width="111" height="5" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAAAFCAYAAABLqrJcAAAAJUlEQVRIie3RAQ0AAAiAMLR/Z83Bxit8gCNKW5tXeWLliZVnBTzY8QEJtSZ5HQAAAABJRU5ErkJggg=="/>
+  </defs>
+  <image x="16" y="44" width="118" height="59" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAA7CAYAAACuYX6jAAAAtElEQVR4nO3dwQ3DMAwEwZPh/ltOGjDyz3qmA2rBB1862z4j55K0SdgoYaOEjRI26v4x1nn74/yJx6vGxkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJGyVslLBRwkYJG+WzhygbGyVslLBRwkYJW7TtCxc9A3VXKBLHAAAAAElFTkSuQmCC"/>
+  <use id="Layer_2_copy" data-name="Layer 2 copy" x="106" y="29" xlink:href="#image"/>
+  <use id="Layer_2_copy_5" data-name="Layer 2 copy 5" x="34" y="29" xlink:href="#image"/>
+  <use id="Layer_2_copy_2" data-name="Layer 2 copy 2" x="21" y="56" xlink:href="#image-2"/>
+  <use id="Layer_2_copy_3" data-name="Layer 2 copy 3" x="21" y="71" xlink:href="#image-2"/>
+  <use id="Layer_2_copy_4" data-name="Layer 2 copy 4" x="21" y="87" xlink:href="#image-2"/>
+</svg>
